@@ -15,6 +15,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 origins = [
     "https://workoutnowfrontend.herokuapp.com/",
+    "http://192.168.1.138:8080/"
 ]
 
 
