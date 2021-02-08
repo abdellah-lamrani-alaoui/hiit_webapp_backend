@@ -14,7 +14,7 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 origins = [
-    "*"
+    "https://workoutnowfrontend.herokuapp.com/*"
 ]
 
 
