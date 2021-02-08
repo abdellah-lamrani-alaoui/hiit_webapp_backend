@@ -3,7 +3,6 @@ import random
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from mangum import Mangum
 
 import config
 import workouts
@@ -37,6 +36,3 @@ async def workout():
     return {"image_url": image_url,
             "timer_url": workout_selected.timer_url,
             "duration_minutes": workout_selected.duration_minutes}
-
-
-handler = Mangum(app)
