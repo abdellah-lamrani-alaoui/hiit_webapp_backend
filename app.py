@@ -37,7 +37,7 @@ async def workout():
                 "duration_minutes": workout_selected.duration_minutes,
                 "workout_type": "image"}
     elif issubclass(workout_selected, workouts.VideoWorkout):
-        return {"url": image_url,
+        return {"url": workout_selected.video_url,
                 "timer_url": workout_selected.timer_url,
                 "duration_minutes": workout_selected.duration_minutes,
                 "workout_type": "video"}
