@@ -41,7 +41,7 @@ class WorkoutDay15(ImageWorkout):
 
 
 class WorkoutSissyMua(VideoWorkout):
-    video_url = "https://www.youtube.com/watch?v=t7xdvBN-y1g"
+    video_url = "https://www.youtube.com/embed/t7xdvBN-y1g"
     duration_minutes = 23
 
 
