@@ -30,8 +30,16 @@ app.add_middleware(
 @app.get("/workout")
 async def workout():
     workout_selected = random.choice(workouts.LIST_AVAILABLE_WORKOUTS)
-    image_url = config.BACK_END_URL + config.BASE_PATH_IMAGES + workout_selected.image_basename
-    print(image_url)
-    return {"image_url": image_url,
-            "timer_url": workout_selected.timer_url,
-            "duration_minutes": workout_selected.duration_minutes}
+    if issubclass(workout_selected, workouts.ImageWorkout):
+        image_url = config.BACK_END_URL + config.BASE_PATH_IMAGES + workout_selected.image_basename
+        return {"url": image_url,
+                "timer_url": workout_selected.timer_url,
+                "duration_minutes": workout_selected.duration_minutes,
+                "workout_type": "image"}
+    elif issubclass(workout_selected, workouts.VideoWorkout):
+        return {"url": image_url,
+                "timer_url": workout_selected.timer_url,
+                "duration_minutes": workout_selected.duration_minutes,
+                "workout_type": "video"}
+    else:
+        raise NotImplementedError("Only video and image workout are supported")
