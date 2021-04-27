@@ -45,5 +45,11 @@ class WorkoutSissyMua(VideoWorkout):
     duration_minutes = 23
 
 
+class WorkoutJustineGallice(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/HVjgH1pXqBM"
+    duration_minutes = 30
+
+
+
 LIST_AVAILABLE_WORKOUTS = [WorkoutDay2, WorkoutDay3, WorkoutDay17,
-                            WorkoutDay8, WorkoutDay8Bis, WorkoutDay15, WorkoutSissyMua]
+                            WorkoutDay8, WorkoutDay8Bis, WorkoutDay15, WorkoutSissyMua, WorkoutJustineGallice]
