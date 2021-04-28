@@ -41,11 +41,5 @@ async def workout():
                 "timer_url": workout_selected.timer_url,
                 "duration_minutes": workout_selected.duration_minutes,
                 "workout_type": "video"}
-    elif issubclass(workout_selected, workouts.HtmlWorkout):
-        html_url = config.BACK_END_URL + config.BASE_PATH_HTML + workout_selected.html_basename
-        return {"url": html_url,
-                "timer_url": workout_selected.timer_url,
-                "duration_minutes": workout_selected.duration_minutes,
-                "workout_type": "html"}
     else:
         raise NotImplementedError("Only video and image workout are supported")
