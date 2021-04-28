@@ -12,6 +12,12 @@ class VideoWorkout():
     timer_url = ""
 
 
+class HtmlWorkout():
+    duration_minutes = None
+    html_url = ""
+    timer_url = ""
+
+
 class WorkoutDay2(ImageWorkout):
     image_basename = "day_2.png"
     timer_url = "http://www.intervaltimer.com/timers/10171876-day2"
@@ -55,7 +61,11 @@ class WorkoutLucile(VideoWorkout):
     duration_minutes = 20
 
 
+class WorkoutWallSit(HtmlWorkout):
+    html_basename = "workout_wall_sit.html"
+
+
 
 LIST_AVAILABLE_WORKOUTS = [WorkoutDay2, WorkoutDay3, WorkoutDay17,
                             WorkoutDay8, WorkoutDay8Bis, WorkoutDay15, WorkoutSissyMua,
-                            WorkoutJustineGallice, WorkoutLucile]
+                            WorkoutJustineGallice, WorkoutLucile, WorkoutWallSit]
