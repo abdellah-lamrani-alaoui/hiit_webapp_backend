@@ -55,7 +55,37 @@ class WorkoutLucile(VideoWorkout):
     duration_minutes = 20
 
 
+class WorkoutSelf1(VideoWorkout):
+    video_url = "https://www.youtube.com//embed/ml6cT4AZdqI"
+    duration_minutes = 25
+    body_focus = "leg"
+    cool_down = True
+    cool_down_duration = 5
+    difficulty = 2
 
-LIST_AVAILABLE_WORKOUTS = [WorkoutDay2, WorkoutDay3, WorkoutDay17,
-                            WorkoutDay8, WorkoutDay8Bis, WorkoutDay15, WorkoutSissyMua,
-                            WorkoutJustineGallice, WorkoutLucile]
+class WorkoutPamela1(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/UBMk30rjy0o"
+    duration_minutes = 20
+
+
+class WorkoutPopsugar1(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/XIeCMhNWFQQ"
+    duration_minutes = 30
+    workout_type = "tabata"
+
+class WorkoutJason1(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/DrhV1L6kJ-A"
+    duration_minutes = 23
+
+
+class WorkoutGrowing1(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/-YpRYNREDV8"
+    duration_minutes = 30
+
+class WorkoutPamela2(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/UItWltVZZmE"
+    duration_minutes = 20
+
+    
+
+LIST_AVAILABLE_WORKOUTS = [WorkoutSelf1, WorkoutPamela1, WorkoutPopsugar1, WorkoutJason1, WorkoutGrowing1, WorkoutPamela2]
