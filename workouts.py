@@ -1,12 +1,14 @@
-class Workout():
+class Workout:
     duration_minutes = None
 
-class ImageWorkout():
+
+class ImageWorkout:
     duration_minutes = None
     image_basename = ""
     timer_url = ""
 
-class VideoWorkout():
+
+class VideoWorkout:
     duration_minutes = None
     video_url = ""
     timer_url = ""
@@ -63,6 +65,7 @@ class WorkoutSelf1(VideoWorkout):
     cool_down_duration = 5
     difficulty = 2
 
+
 class WorkoutPamela1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/UBMk30rjy0o"
     duration_minutes = 20
@@ -73,6 +76,7 @@ class WorkoutPopsugar1(VideoWorkout):
     duration_minutes = 30
     workout_type = "tabata"
 
+
 class WorkoutJason1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/DrhV1L6kJ-A"
     duration_minutes = 23
@@ -82,10 +86,23 @@ class WorkoutGrowing1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/-YpRYNREDV8"
     duration_minutes = 30
 
+
 class WorkoutPamela2(VideoWorkout):
     video_url = "https://www.youtube.com/embed/UItWltVZZmE"
     duration_minutes = 20
 
-    
 
-LIST_AVAILABLE_WORKOUTS = [WorkoutSelf1, WorkoutPamela1, WorkoutPopsugar1, WorkoutJason1, WorkoutGrowing1, WorkoutPamela2]
+class WorkoutJordanYeoh1(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/DOtr16U8V2M"
+    duration_minutes = 30
+
+
+LIST_AVAILABLE_WORKOUTS = [
+    WorkoutSelf1,
+    WorkoutPamela1,
+    WorkoutPopsugar1,
+    WorkoutJason1,
+    WorkoutGrowing1,
+    WorkoutPamela2,
+    WorkoutJordanYeoh1,
+]
