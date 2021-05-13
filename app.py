@@ -1,5 +1,6 @@
 import os
 import random
+import re
 from typing import Optional
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -45,7 +46,7 @@ class NoWorkoutInFilter(Exception):
 
 
 def retreat_duration_filter(duration_filter):
-    return int(duration_filter.split(" ")[0])
+    return int(re.search(r'\d+', duration_filter).group())
 
 
 @app.get("/workout")
