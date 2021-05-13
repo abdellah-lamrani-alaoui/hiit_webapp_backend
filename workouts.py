@@ -59,7 +59,7 @@ class WorkoutLucile(VideoWorkout):
 
 class WorkoutSelf1(VideoWorkout):
     video_url = "https://www.youtube.com//embed/ml6cT4AZdqI"
-    duration_minutes = 25
+    duration_minutes = 30
     body_focus = "leg"
     cool_down = True
     cool_down_duration = 5
