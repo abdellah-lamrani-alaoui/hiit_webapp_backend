@@ -77,6 +77,7 @@ class WorkoutMadFit1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/r1c72WMpfI0"
     duration_minutes = 15
 
+
 class WorkoutPamela1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/UBMk30rjy0o"
     duration_minutes = 20
@@ -107,6 +108,7 @@ class WorkoutJordanYeoh1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/DOtr16U8V2M"
     duration_minutes = 30
 
+
 class WorkoutPopsugar2(VideoWorkout):
     video_url = "https://www.youtube.com/embed/_Zem0_qsDg0"
     duration_minutes = 45
@@ -123,7 +125,6 @@ class WorkoutAllblanc(VideoWorkout):
     difficulty = 2
     body_focus = ["leg", "core", "chest"]
     pauses = False
-
 
 
 LIST_AVAILABLE_WORKOUTS = [
