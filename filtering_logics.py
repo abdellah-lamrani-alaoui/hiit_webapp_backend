@@ -1,5 +1,5 @@
 def is_workout_in_duration_filter(
-    duration_workout: int, duration_filter: int, allowed_durations_filter: list[int]
+    duration_workout: int, duration_filter: int, allowed_durations_filter
 ):
     if duration_filter not in allowed_durations_filter:
         raise ValueError(
