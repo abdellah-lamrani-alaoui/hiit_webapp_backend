@@ -66,6 +66,15 @@ class WorkoutSelf1(VideoWorkout):
     difficulty = 2
 
 
+class WorkoutPamelaQuick(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/6VFLKdfxA24"
+    duration_minutes = 10
+
+
+class WorkoutMadFit1(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/r1c72WMpfI0"
+    duration_minutes = 15
+
 class WorkoutPamela1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/UBMk30rjy0o"
     duration_minutes = 20
@@ -105,4 +114,6 @@ LIST_AVAILABLE_WORKOUTS = [
     WorkoutGrowing1,
     WorkoutPamela2,
     WorkoutJordanYeoh1,
+    WorkoutPamelaQuick,
+    WorkoutMadFit1
 ]
