@@ -105,6 +105,20 @@ class WorkoutJordanYeoh1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/DOtr16U8V2M"
     duration_minutes = 30
 
+class WorkoutPopsugar2(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/_Zem0_qsDg0"
+    duration_minutes = 45
+
+
+class WorkoutPopsugar3(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/s3F6R92s6_o"
+    duration_minutes = 60
+
+
+class WorkoutAllblanc(VideoWorkout):
+    video_url = "https://www.youtube.com/embed/Tz9d7By2ytQ"
+    duration_minutes = 5
+
 
 LIST_AVAILABLE_WORKOUTS = [
     WorkoutSelf1,
@@ -115,5 +129,8 @@ LIST_AVAILABLE_WORKOUTS = [
     WorkoutPamela2,
     WorkoutJordanYeoh1,
     WorkoutPamelaQuick,
-    WorkoutMadFit1
+    WorkoutMadFit1,
+    WorkoutPopsugar2,
+    WorkoutPopsugar3,
+    WorkoutAllblanc,
 ]

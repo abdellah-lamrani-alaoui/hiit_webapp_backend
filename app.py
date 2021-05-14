@@ -29,10 +29,7 @@ app.add_middleware(
 
 
 def is_workout_in_duration_filter(duration_workout: int, duration_filter: int):
-    min_duration = 5
-    max_duration = 60
-    step = 5
-    allowed_durations_filter = range(min_duration, max_duration, step)
+    allowed_durations_filter = [5, 10, 15, 20, 30, 45, 60]
 
     if duration_filter not in allowed_durations_filter:
         raise ValueError(f"Duration should be a multiple of {step} and between {min_duration} and  {max_duration}")
