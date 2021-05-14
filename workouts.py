@@ -118,6 +118,9 @@ class WorkoutPopsugar3(VideoWorkout):
 class WorkoutAllblanc(VideoWorkout):
     video_url = "https://www.youtube.com/embed/Tz9d7By2ytQ"
     duration_minutes = 5
+    difficulty = 2
+    body_focus = ["leg", "core", "chest"]
+
 
 
 LIST_AVAILABLE_WORKOUTS = [
