@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install --upgrade pip setuptools
-        pip install -r test/tests_requirements.txt
+        pip install -r test/test_requirements.txt
     - name: Unit tests
       run: |
         export PYTHONPATH=/home/runner/work/hiit_webapp_backend/hiit_webapp_backend
