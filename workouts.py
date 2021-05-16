@@ -76,6 +76,10 @@ class WorkoutPamelaQuick(VideoWorkout):
 class WorkoutMadFit1(VideoWorkout):
     video_url = "https://www.youtube.com/embed/r1c72WMpfI0"
     duration_minutes = 15
+    difficulty = 3
+    body_focus = ["abs", "legs"]
+    pauses = False
+    coach = "MadFit"
 
 
 class WorkoutPamela1(VideoWorkout):
